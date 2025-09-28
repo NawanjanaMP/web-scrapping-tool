@@ -1,0 +1,182 @@
+# ===========================
+# app/templates/index.html
+# ===========================
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <i class="fas fa-spider"></i>
+                Professional Web Scraping Tool
+            </h1>
+            <p class="hero-subtitle">
+                Extract data from any website with advanced parsing and modern interface
+            </p>
+            <div class="hero-features">
+                <span class="feature-tag"><i class="fas fa-rocket"></i> Fast & Reliable</span>
+                <span class="feature-tag"><i class="fas fa-shield-alt"></i> Secure</span>
+                <span class="feature-tag"><i class="fas fa-download"></i> Export Ready</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="scraper-interface">
+        <div class="input-section">
+            <form id="scrapeForm" class="scrape-form">
+                <div class="form-group">
+                    <label for="url" class="form-label">
+                        <i class="fas fa-link"></i>
+                        Website URL
+                    </label>
+                    <input 
+                        type="url" 
+                        id="url" 
+                        name="url" 
+                        class="form-input"
+                        placeholder="https://example.com" 
+                        required
+                    >
+                    <div class="input-helper">Enter the complete URL including http:// or https://</div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">
+                        <i class="fas fa-cogs"></i>
+                        Scraping Options
+                    </label>
+                    <div class="options-grid">
+                        <label class="option-card">
+                            <input type="checkbox" name="options" value="text" checked>
+                            <div class="option-content">
+                                <i class="fas fa-file-text option-icon"></i>
+                                <span class="option-title">Text Content</span>
+                                <span class="option-desc">Extract readable text from the page</span>
+                            </div>
+                        </label>
+                        
+                        <label class="option-card">
+                            <input type="checkbox" name="options" value="links" checked>
+                            <div class="option-content">
+                                <i class="fas fa-external-link-alt option-icon"></i>
+                                <span class="option-title">Links</span>
+                                <span class="option-desc">Collect all hyperlinks and URLs</span>
+                            </div>
+                        </label>
+                        
+                        <label class="option-card">
+                            <input type="checkbox" name="options" value="images">
+                            <div class="option-content">
+                                <i class="fas fa-image option-icon"></i>
+                                <span class="option-title">Images</span>
+                                <span class="option-desc">Gather image sources and metadata</span>
+                            </div>
+                        </label>
+                        
+                        <label class="option-card">
+                            <input type="checkbox" name="options" value="headings" checked>
+                            <div class="option-content">
+                                <i class="fas fa-heading option-icon"></i>
+                                <span class="option-title">Headings</span>
+                                <span class="option-desc">Extract structured headings (H1-H6)</span>
+                            </div>
+                        </label>
+                        
+                        <label class="option-card">
+                            <input type="checkbox" name="options" value="meta">
+                            <div class="option-content">
+                                <i class="fas fa-tags option-icon"></i>
+                                <span class="option-title">Meta Data</span>
+                                <span class="option-desc">Page title, description, keywords</span>
+                            </div>
+                        </label>
+                        
+                        <label class="option-card">
+                            <input type="checkbox" name="options" value="forms">
+                            <div class="option-content">
+                                <i class="fas fa-wpforms option-icon"></i>
+                                <span class="option-title">Forms</span>
+                                <span class="option-desc">Analyze form structures and fields</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                
+                <button type="submit" class="scrape-btn" id="scrapeBtn">
+                    <i class="fas fa-play"></i>
+                    <span>Start Scraping</span>
+                </button>
+            </form>
+        </div>
+
+        <!-- Loading State -->
+        <div class="loading-section" id="loadingSection">
+            <div class="loading-animation">
+                <div class="spinner"></div>
+                <div class="loading-text">
+                    <h3>Scraping in Progress</h3>
+                    <p id="loadingMessage">Fetching website data... Please wait</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Error Display -->
+        <div class="error-section" id="errorSection">
+            <div class="error-content">
+                <i class="fas fa-exclamation-triangle"></i>
+                <h3>Scraping Failed</h3>
+                <p id="errorMessage"></p>
+                <button class="retry-btn" onclick="hideError()">
+                    <i class="fas fa-redo"></i>
+                    Try Again
+                </button>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results-section" id="resultsSection">
+            <div class="results-header">
+                <h3>
+                    <i class="fas fa-chart-bar"></i>
+                    Scraping Results
+                </h3>
+                <div class="results-actions">
+                    <button class="action-btn" id="downloadBtn">
+                        <i class="fas fa-download"></i>
+                        Download JSON
+                    </button>
+                    <button class="action-btn secondary" id="copyBtn">
+                        <i class="fas fa-copy"></i>
+                        Copy Data
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Statistics Cards -->
+            <div class="stats-grid" id="statsGrid"></div>
+            
+            <!-- JSON Output -->
+            <div class="json-section">
+                <div class="json-header">
+                    <h4><i class="fas fa-code"></i> JSON Output</h4>
+                    <div class="json-controls">
+                        <button class="control-btn" id="formatBtn">
+                            <i class="fas fa-indent"></i>
+                            Format
+                        </button>
+                        <button class="control-btn" id="collapseBtn">
+                            <i class="fas fa-compress"></i>
+                            Collapse
+                        </button>
+                    </div>
+                </div>
+                <div class="json-output" id="jsonOutput"></div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
