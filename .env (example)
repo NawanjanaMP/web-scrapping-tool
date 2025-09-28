@@ -1,6 +1,0 @@
-# ===========================
-# .env (example)
-# ===========================
-FLASK_ENV=development
-SECRET_KEY=your-secret-key-here
-PORT=5000
