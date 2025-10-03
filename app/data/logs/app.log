@@ -19,3 +19,57 @@
 2025-09-28 20:01:17,732 - httpx - INFO - HTTP Request: GET https://about.google/products/ "HTTP/1.1 200 OK"
 2025-09-28 20:01:18,459 - app.core.scraper - INFO - Successfully scraped https://about.google/products/
 2025-09-28 20:01:18,501 - app.api.routes - INFO - Scraping result saved successfully
+2025-09-28 22:51:29,539 - app.api.routes - INFO - Scraping request for: http://books.toscrape.com/
+2025-09-28 22:51:29,539 - app.core.scraper - INFO - Starting scrape of http://books.toscrape.com/ with options: [<ScrapingOption.TEXT: 'text'>]
+2025-09-28 22:51:29,588 - app.core.scraper - INFO - Fetching http://books.toscrape.com/ (attempt 1)
+2025-09-28 22:51:30,514 - app.core.scraper - WARNING - Connection error on attempt 1
+2025-09-28 22:51:31,521 - app.core.scraper - INFO - Fetching http://books.toscrape.com/ (attempt 2)
+2025-09-28 22:51:31,523 - app.core.scraper - WARNING - Connection error on attempt 2
+2025-09-28 22:51:33,518 - app.core.scraper - INFO - Fetching http://books.toscrape.com/ (attempt 3)
+2025-09-28 22:51:33,518 - app.core.scraper - WARNING - Connection error on attempt 3
+2025-09-28 22:51:33,518 - app.core.scraper - ERROR - Scraping error for http://books.toscrape.com/: Connection error: [Errno 11001] getaddrinfo failed
+2025-09-28 22:53:24,704 - app.api.routes - INFO - Scraping request for: http://books.toscrape.com/
+2025-09-28 22:53:24,704 - app.core.scraper - INFO - Starting scrape of http://books.toscrape.com/ with options: [<ScrapingOption.TEXT: 'text'>]
+2025-09-28 22:53:24,716 - app.core.scraper - INFO - Fetching http://books.toscrape.com/ (attempt 1)
+2025-09-28 22:53:24,734 - app.core.scraper - WARNING - Connection error on attempt 1
+2025-09-28 22:53:25,728 - app.core.scraper - INFO - Fetching http://books.toscrape.com/ (attempt 2)
+2025-09-28 22:53:25,729 - app.core.scraper - WARNING - Connection error on attempt 2
+2025-09-28 22:53:27,735 - app.core.scraper - INFO - Fetching http://books.toscrape.com/ (attempt 3)
+2025-09-28 22:53:27,735 - app.core.scraper - WARNING - Connection error on attempt 3
+2025-09-28 22:53:27,735 - app.core.scraper - ERROR - Scraping error for http://books.toscrape.com/: Connection error: [Errno 11001] getaddrinfo failed
+2025-09-28 22:54:22,930 - app.api.routes - INFO - Scraping request for: https://riyasewana.com/search/cars
+2025-09-28 22:54:22,930 - app.core.scraper - INFO - Starting scrape of https://riyasewana.com/search/cars with options: [<ScrapingOption.TEXT: 'text'>]
+2025-09-28 22:54:22,938 - app.core.scraper - INFO - Fetching https://riyasewana.com/search/cars (attempt 1)
+2025-09-28 22:54:23,098 - httpx - INFO - HTTP Request: GET https://riyasewana.com/search/cars "HTTP/1.1 403 Forbidden"
+2025-09-28 22:54:23,098 - app.core.scraper - WARNING - HTTP error on attempt 1
+2025-09-28 22:54:24,102 - app.core.scraper - INFO - Fetching https://riyasewana.com/search/cars (attempt 2)
+2025-09-28 22:54:24,191 - httpx - INFO - HTTP Request: GET https://riyasewana.com/search/cars "HTTP/1.1 403 Forbidden"
+2025-09-28 22:54:24,191 - app.core.scraper - WARNING - HTTP error on attempt 2
+2025-09-28 22:54:26,184 - app.core.scraper - INFO - Fetching https://riyasewana.com/search/cars (attempt 3)
+2025-09-28 22:54:26,241 - httpx - INFO - HTTP Request: GET https://riyasewana.com/search/cars "HTTP/1.1 403 Forbidden"
+2025-09-28 22:54:26,242 - app.core.scraper - WARNING - HTTP error on attempt 3
+2025-09-28 22:54:26,246 - app.core.scraper - ERROR - Scraping error for https://riyasewana.com/search/cars: HTTP error 403
+2025-09-28 22:55:26,385 - app.api.routes - INFO - Scraping request for: https://riyasewana.com/search/cars
+2025-09-28 22:55:26,386 - app.core.scraper - INFO - Starting scrape of https://riyasewana.com/search/cars with options: [<ScrapingOption.TEXT: 'text'>, <ScrapingOption.LINKS: 'links'>, <ScrapingOption.IMAGES: 'images'>]
+2025-09-28 22:55:26,401 - app.core.scraper - INFO - Fetching https://riyasewana.com/search/cars (attempt 1)
+2025-09-28 22:55:26,544 - httpx - INFO - HTTP Request: GET https://riyasewana.com/search/cars "HTTP/1.1 403 Forbidden"
+2025-09-28 22:55:26,544 - app.core.scraper - WARNING - HTTP error on attempt 1
+2025-09-28 22:55:27,550 - app.core.scraper - INFO - Fetching https://riyasewana.com/search/cars (attempt 2)
+2025-09-28 22:55:27,599 - httpx - INFO - HTTP Request: GET https://riyasewana.com/search/cars "HTTP/1.1 403 Forbidden"
+2025-09-28 22:55:27,606 - app.core.scraper - WARNING - HTTP error on attempt 2
+2025-09-28 22:55:29,620 - app.core.scraper - INFO - Fetching https://riyasewana.com/search/cars (attempt 3)
+2025-09-28 22:55:29,689 - httpx - INFO - HTTP Request: GET https://riyasewana.com/search/cars "HTTP/1.1 403 Forbidden"
+2025-09-28 22:55:29,696 - app.core.scraper - WARNING - HTTP error on attempt 3
+2025-09-28 22:55:29,696 - app.core.scraper - ERROR - Scraping error for https://riyasewana.com/search/cars: HTTP error 403
+2025-09-28 22:56:28,322 - app.api.routes - INFO - Scraping request for: https://www.youtube.com/
+2025-09-28 22:56:28,323 - app.core.scraper - INFO - Starting scrape of https://www.youtube.com/ with options: [<ScrapingOption.TEXT: 'text'>, <ScrapingOption.LINKS: 'links'>, <ScrapingOption.IMAGES: 'images'>]
+2025-09-28 22:56:28,333 - app.core.scraper - INFO - Fetching https://www.youtube.com/ (attempt 1)
+2025-09-28 22:56:28,785 - httpx - INFO - HTTP Request: GET https://www.youtube.com/ "HTTP/1.1 200 OK"
+2025-09-28 22:56:29,847 - app.core.scraper - INFO - Successfully scraped https://www.youtube.com/
+2025-09-28 22:56:29,953 - app.api.routes - INFO - Scraping result saved successfully
+2025-09-28 22:58:44,227 - app.api.routes - INFO - Scraping request for: https://github.com/nixx49
+2025-09-28 22:58:44,228 - app.core.scraper - INFO - Starting scrape of https://github.com/nixx49 with options: [<ScrapingOption.TEXT: 'text'>, <ScrapingOption.LINKS: 'links'>, <ScrapingOption.IMAGES: 'images'>, <ScrapingOption.HEADINGS: 'headings'>]
+2025-09-28 22:58:44,267 - app.core.scraper - INFO - Fetching https://github.com/nixx49 (attempt 1)
+2025-09-28 22:58:45,043 - httpx - INFO - HTTP Request: GET https://github.com/nixx49 "HTTP/1.1 200 OK"
+2025-09-28 22:58:45,199 - app.core.scraper - INFO - Successfully scraped https://github.com/nixx49
+2025-09-28 22:58:45,373 - app.api.routes - INFO - Scraping result saved successfully
