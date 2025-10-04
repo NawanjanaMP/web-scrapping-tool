@@ -1,0 +1,97 @@
+{
+  "url": "https://www.youtube.com/",
+  "timestamp": "2025-10-04 07:46:59.345613",
+  "options_used": [
+    "text",
+    "links",
+    "images",
+    "headings"
+  ],
+  "success": true,
+  "error": null,
+  "data": {
+    "text_content": [],
+    "links": [
+      {
+        "text": "No text",
+        "href": "/",
+        "absolute_url": "https://www.youtube.com/"
+      },
+      {
+        "text": "No text",
+        "href": "/",
+        "absolute_url": "https://www.youtube.com/"
+      },
+      {
+        "text": "පිළිබඳව",
+        "href": "https://www.youtube.com/about/",
+        "absolute_url": "https://www.youtube.com/about/"
+      },
+      {
+        "text": "මාධ්‍ය",
+        "href": "https://www.youtube.com/about/press/",
+        "absolute_url": "https://www.youtube.com/about/press/"
+      },
+      {
+        "text": "ප්‍රකාශන හිමිකම",
+        "href": "https://www.youtube.com/about/copyright/",
+        "absolute_url": "https://www.youtube.com/about/copyright/"
+      },
+      {
+        "text": "අප අමතන්න",
+        "href": "/t/contact_us/",
+        "absolute_url": "https://www.youtube.com/t/contact_us/"
+      },
+      {
+        "text": "නිර්මාපකයින්",
+        "href": "https://www.youtube.com/creators/",
+        "absolute_url": "https://www.youtube.com/creators/"
+      },
+      {
+        "text": "වෙළඳ ප්‍රචාරණය",
+        "href": "https://www.youtube.com/ads/",
+        "absolute_url": "https://www.youtube.com/ads/"
+      },
+      {
+        "text": "සංවර්ධකයින්",
+        "href": "https://developers.google.com/youtube",
+        "absolute_url": "https://developers.google.com/youtube"
+      },
+      {
+        "text": "නියම",
+        "href": "/t/terms",
+        "absolute_url": "https://www.youtube.com/t/terms"
+      },
+      {
+        "text": "රහස්‍යතාව",
+        "href": "/t/privacy",
+        "absolute_url": "https://www.youtube.com/t/privacy"
+      },
+      {
+        "text": "ප්‍රතිපත්තිය සහ සුරක්ෂිතතාව",
+        "href": "https://www.youtube.com/about/policies/",
+        "absolute_url": "https://www.youtube.com/about/policies/"
+      },
+      {
+        "text": "YouTube වැඩ කරන ආකාරය",
+        "href": "https://www.youtube.com/howyoutubeworks?utm_campaign=ytgen&utm_source=ythp&utm_medium=LeftNav&utm_content=txt&u=https%3A%2F%2Fwww.youtube.com%2Fhowyoutubeworks%3Futm_source%3Dythp%26utm_medium%3DLeftNav%26utm_campaign%3Dytgen",
+        "absolute_url": "https://www.youtube.com/howyoutubeworks?utm_campaign=ytgen&utm_source=ythp&utm_medium=LeftNav&utm_content=txt&u=https%3A%2F%2Fwww.youtube.com%2Fhowyoutubeworks%3Futm_source%3Dythp%26utm_medium%3DLeftNav%26utm_campaign%3Dytgen"
+      },
+      {
+        "text": "නව විශේෂාංග පරීක්ෂා කරන්න",
+        "href": "/new",
+        "absolute_url": "https://www.youtube.com/new"
+      }
+    ],
+    "images": [],
+    "headings": {},
+    "meta": null,
+    "forms": null
+  },
+  "stats": {
+    "text_content_count": 0,
+    "links_count": 14,
+    "images_count": 0,
+    "total_headings": 0
+  }
+}

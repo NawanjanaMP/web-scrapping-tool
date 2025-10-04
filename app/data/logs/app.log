@@ -103,3 +103,45 @@
 2025-10-03 23:30:55,946 - httpx - INFO - HTTP Request: GET https://about.google/products/ "HTTP/1.1 200 OK"
 2025-10-03 23:30:56,362 - app.core.scraper - INFO - Successfully scraped https://about.google/products/
 2025-10-03 23:30:56,370 - app.api.routes - INFO - Scraping result saved successfully
+2025-10-04 13:16:08,431 - app.api.routes - INFO - Scraping request for: https://riyasewana.com/search/cars
+2025-10-04 13:16:08,444 - app.core.scraper - INFO - Starting scrape of https://riyasewana.com/search/cars with options: [<ScrapingOption.TEXT: 'text'>, <ScrapingOption.LINKS: 'links'>, <ScrapingOption.IMAGES: 'images'>, <ScrapingOption.HEADINGS: 'headings'>]
+2025-10-04 13:16:08,521 - app.core.scraper - INFO - Fetching https://riyasewana.com/search/cars (attempt 1)
+2025-10-04 13:16:08,812 - httpx - INFO - HTTP Request: GET https://riyasewana.com/search/cars "HTTP/1.1 403 Forbidden"
+2025-10-04 13:16:08,821 - app.core.scraper - WARNING - HTTP error on attempt 1
+2025-10-04 13:16:09,795 - app.core.scraper - INFO - Fetching https://riyasewana.com/search/cars (attempt 2)
+2025-10-04 13:16:09,841 - httpx - INFO - HTTP Request: GET https://riyasewana.com/search/cars "HTTP/1.1 403 Forbidden"
+2025-10-04 13:16:09,841 - app.core.scraper - WARNING - HTTP error on attempt 2
+2025-10-04 13:16:11,861 - app.core.scraper - INFO - Fetching https://riyasewana.com/search/cars (attempt 3)
+2025-10-04 13:16:11,918 - httpx - INFO - HTTP Request: GET https://riyasewana.com/search/cars "HTTP/1.1 403 Forbidden"
+2025-10-04 13:16:11,919 - app.core.scraper - WARNING - HTTP error on attempt 3
+2025-10-04 13:16:11,919 - app.core.scraper - ERROR - Scraping error for https://riyasewana.com/search/cars: HTTP error 403
+2025-10-04 13:16:26,034 - app.api.routes - INFO - Scraping request for: https://about.google/products/
+2025-10-04 13:16:26,034 - app.core.scraper - INFO - Starting scrape of https://about.google/products/ with options: [<ScrapingOption.TEXT: 'text'>, <ScrapingOption.LINKS: 'links'>, <ScrapingOption.IMAGES: 'images'>, <ScrapingOption.HEADINGS: 'headings'>]
+2025-10-04 13:16:26,050 - app.core.scraper - INFO - Fetching https://about.google/products/ (attempt 1)
+2025-10-04 13:16:26,341 - httpx - INFO - HTTP Request: GET https://about.google/products/ "HTTP/1.1 200 OK"
+2025-10-04 13:16:26,684 - app.core.scraper - INFO - Successfully scraped https://about.google/products/
+2025-10-04 13:16:26,693 - app.api.routes - INFO - Scraping result saved successfully
+2025-10-04 13:16:59,345 - app.api.routes - INFO - Scraping request for: https://www.youtube.com/
+2025-10-04 13:16:59,345 - app.core.scraper - INFO - Starting scrape of https://www.youtube.com/ with options: [<ScrapingOption.TEXT: 'text'>, <ScrapingOption.LINKS: 'links'>, <ScrapingOption.IMAGES: 'images'>, <ScrapingOption.HEADINGS: 'headings'>]
+2025-10-04 13:16:59,367 - app.core.scraper - INFO - Fetching https://www.youtube.com/ (attempt 1)
+2025-10-04 13:16:59,718 - httpx - INFO - HTTP Request: GET https://www.youtube.com/ "HTTP/1.1 200 OK"
+2025-10-04 13:17:01,222 - app.core.scraper - INFO - Successfully scraped https://www.youtube.com/
+2025-10-04 13:17:01,232 - app.api.routes - INFO - Scraping result saved successfully
+2025-10-04 13:17:49,919 - app.api.routes - INFO - Scraping request for: https://courses.davidbombal.com/l/products?enrolled=true&sortKey=name&sortDirection=asc&page=1
+2025-10-04 13:17:49,920 - app.core.scraper - INFO - Starting scrape of https://courses.davidbombal.com/l/products?enrolled=true&sortKey=name&sortDirection=asc&page=1 with options: [<ScrapingOption.TEXT: 'text'>, <ScrapingOption.LINKS: 'links'>, <ScrapingOption.IMAGES: 'images'>, <ScrapingOption.HEADINGS: 'headings'>]
+2025-10-04 13:17:49,929 - app.core.scraper - INFO - Fetching https://courses.davidbombal.com/l/products?enrolled=true&sortKey=name&sortDirection=asc&page=1 (attempt 1)
+2025-10-04 13:17:50,498 - httpx - INFO - HTTP Request: GET https://courses.davidbombal.com/l/products?enrolled=true&sortKey=name&sortDirection=asc&page=1 "HTTP/1.1 200 OK"
+2025-10-04 13:17:51,651 - app.core.scraper - INFO - Successfully scraped https://courses.davidbombal.com/l/products?enrolled=true&sortKey=name&sortDirection=asc&page=1
+2025-10-04 13:17:51,663 - app.api.routes - INFO - Scraping result saved successfully
+2025-10-04 13:19:54,452 - app.api.routes - INFO - Scraping request for: https://www.combank.lk/careers
+2025-10-04 13:19:54,452 - app.core.scraper - INFO - Starting scrape of https://www.combank.lk/careers with options: [<ScrapingOption.TEXT: 'text'>, <ScrapingOption.LINKS: 'links'>, <ScrapingOption.IMAGES: 'images'>, <ScrapingOption.HEADINGS: 'headings'>, <ScrapingOption.META: 'meta'>, <ScrapingOption.FORMS: 'forms'>]
+2025-10-04 13:19:54,473 - app.core.scraper - INFO - Fetching https://www.combank.lk/careers (attempt 1)
+2025-10-04 13:19:54,912 - httpx - INFO - HTTP Request: GET https://www.combank.lk/careers "HTTP/1.1 200 OK"
+2025-10-04 13:19:55,266 - app.core.scraper - INFO - Successfully scraped https://www.combank.lk/careers
+2025-10-04 13:19:55,359 - app.api.routes - INFO - Scraping result saved successfully
+2025-10-04 13:21:29,453 - app.api.routes - INFO - Scraping request for: https://www.combank.lk/careers
+2025-10-04 13:21:29,453 - app.core.scraper - INFO - Starting scrape of https://www.combank.lk/careers with options: [<ScrapingOption.TEXT: 'text'>, <ScrapingOption.LINKS: 'links'>, <ScrapingOption.IMAGES: 'images'>, <ScrapingOption.HEADINGS: 'headings'>, <ScrapingOption.META: 'meta'>, <ScrapingOption.FORMS: 'forms'>]
+2025-10-04 13:21:29,466 - app.core.scraper - INFO - Fetching https://www.combank.lk/careers (attempt 1)
+2025-10-04 13:21:29,791 - httpx - INFO - HTTP Request: GET https://www.combank.lk/careers "HTTP/1.1 200 OK"
+2025-10-04 13:21:30,075 - app.core.scraper - INFO - Successfully scraped https://www.combank.lk/careers
+2025-10-04 13:21:30,080 - app.api.routes - INFO - Scraping result saved successfully
