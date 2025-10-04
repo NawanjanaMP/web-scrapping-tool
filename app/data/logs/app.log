@@ -73,3 +73,33 @@
 2025-09-28 22:58:45,043 - httpx - INFO - HTTP Request: GET https://github.com/nixx49 "HTTP/1.1 200 OK"
 2025-09-28 22:58:45,199 - app.core.scraper - INFO - Successfully scraped https://github.com/nixx49
 2025-09-28 22:58:45,373 - app.api.routes - INFO - Scraping result saved successfully
+2025-10-03 22:56:48,521 - app.api.routes - INFO - Scraping request for: https://about.google/products/
+2025-10-03 22:56:48,722 - app.core.scraper - INFO - Starting scrape of https://about.google/products/ with options: [<ScrapingOption.TEXT: 'text'>, <ScrapingOption.LINKS: 'links'>, <ScrapingOption.HEADINGS: 'headings'>, <ScrapingOption.META: 'meta'>, <ScrapingOption.FORMS: 'forms'>]
+2025-10-03 22:56:48,778 - app.core.scraper - INFO - Fetching https://about.google/products/ (attempt 1)
+2025-10-03 22:56:49,026 - httpx - INFO - HTTP Request: GET https://about.google/products/ "HTTP/1.1 200 OK"
+2025-10-03 22:56:49,409 - app.core.scraper - INFO - Successfully scraped https://about.google/products/
+2025-10-03 22:56:49,417 - app.api.routes - INFO - Scraping result saved successfully
+2025-10-03 22:57:22,789 - app.api.routes - INFO - Scraping request for: https://about.google/products/
+2025-10-03 22:57:22,796 - app.core.scraper - INFO - Starting scrape of https://about.google/products/ with options: [<ScrapingOption.TEXT: 'text'>, <ScrapingOption.HEADINGS: 'headings'>]
+2025-10-03 22:57:22,819 - app.core.scraper - INFO - Fetching https://about.google/products/ (attempt 1)
+2025-10-03 22:57:22,964 - httpx - INFO - HTTP Request: GET https://about.google/products/ "HTTP/1.1 200 OK"
+2025-10-03 22:57:23,304 - app.core.scraper - INFO - Successfully scraped https://about.google/products/
+2025-10-03 22:57:23,312 - app.api.routes - INFO - Scraping result saved successfully
+2025-10-03 23:26:13,979 - app.api.routes - INFO - Scraping request for: http://books.toscrape.com/
+2025-10-03 23:26:13,982 - app.core.scraper - INFO - Starting scrape of http://books.toscrape.com/ with options: [<ScrapingOption.TEXT: 'text'>, <ScrapingOption.LINKS: 'links'>, <ScrapingOption.HEADINGS: 'headings'>, <ScrapingOption.META: 'meta'>, <ScrapingOption.FORMS: 'forms'>]
+2025-10-03 23:26:14,052 - app.core.scraper - INFO - Fetching http://books.toscrape.com/ (attempt 1)
+2025-10-03 23:26:14,919 - httpx - INFO - HTTP Request: GET http://books.toscrape.com/ "HTTP/1.1 200 OK"
+2025-10-03 23:26:15,648 - app.core.scraper - INFO - Successfully scraped http://books.toscrape.com/
+2025-10-03 23:26:15,661 - app.api.routes - INFO - Scraping result saved successfully
+2025-10-03 23:29:48,997 - app.api.routes - INFO - Scraping request for: https://about.google/products/
+2025-10-03 23:29:48,999 - app.core.scraper - INFO - Starting scrape of https://about.google/products/ with options: [<ScrapingOption.TEXT: 'text'>, <ScrapingOption.LINKS: 'links'>, <ScrapingOption.HEADINGS: 'headings'>]
+2025-10-03 23:29:49,025 - app.core.scraper - INFO - Fetching https://about.google/products/ (attempt 1)
+2025-10-03 23:29:49,200 - httpx - INFO - HTTP Request: GET https://about.google/products/ "HTTP/1.1 200 OK"
+2025-10-03 23:29:49,555 - app.core.scraper - INFO - Successfully scraped https://about.google/products/
+2025-10-03 23:29:49,566 - app.api.routes - INFO - Scraping result saved successfully
+2025-10-03 23:30:55,745 - app.api.routes - INFO - Scraping request for: https://about.google/products/
+2025-10-03 23:30:55,745 - app.core.scraper - INFO - Starting scrape of https://about.google/products/ with options: [<ScrapingOption.TEXT: 'text'>, <ScrapingOption.LINKS: 'links'>, <ScrapingOption.HEADINGS: 'headings'>]
+2025-10-03 23:30:55,773 - app.core.scraper - INFO - Fetching https://about.google/products/ (attempt 1)
+2025-10-03 23:30:55,946 - httpx - INFO - HTTP Request: GET https://about.google/products/ "HTTP/1.1 200 OK"
+2025-10-03 23:30:56,362 - app.core.scraper - INFO - Successfully scraped https://about.google/products/
+2025-10-03 23:30:56,370 - app.api.routes - INFO - Scraping result saved successfully
